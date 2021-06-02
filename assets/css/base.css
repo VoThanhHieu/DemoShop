@@ -1,41 +1,41 @@
-:root{
+:root {
     --primary-color: rgb(238, 77, 43);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
-
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
 }
 
-*{
+* {
     box-sizing: inherit;
 }
 
-html{
+html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
-    box-sizing:  border-box;
+    box-sizing: border-box;
 }
-.gird{
+
+.gird {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.gird__full-width{
+.gird__full-width {
     width: 100%;
 }
 
-.gird__row{
+.gird__row {
     display: flex;
     flex-wrap: wrap;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -44,7 +44,7 @@ html{
     }
 }
 
-@keyframes growth{
+@keyframes growth {
     from {
         transform: scale(var(--growth-form));
     }
@@ -53,8 +53,10 @@ html{
     }
 }
 
+
 /* modal */
-.modal{
+
+.modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -63,19 +65,23 @@ html{
     display: flex;
     animation: fadeIn linear 0.1s;
 }
-.modal__overlay{
+
+.modal__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4)
 }
-.modal__body{
+
+.modal__body {
     --growth-form: 0.7;
     --growth-to: 1;
     margin: auto;
     position: relative;
     animation: growth linear 0.1s;
 }
+
+
 /* icon */
 
 .fa-google {
@@ -84,11 +90,13 @@ html{
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-  }
+}
+
 
 /* button */
-.btn{
-    min-width: 142px;
+
+.btn {
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -104,15 +112,18 @@ html{
     background-color: transparent;
     line-height: 3.5rem;
 }
-.btn.btn--size-s{
+
+.btn.btn--size-s {
     height: 32px;
     font-size: 1.2rem;
     padding: 0 8px;
 }
-.btn.btn--normal:hover{
+
+.btn.btn--normal:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
-.btn.btn--primary{
+
+.btn.btn--primary {
     line-height: 35px;
     color: var(--white-color);
     background-color: var(--primary-color);
